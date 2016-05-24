@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cell counting</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="edit_message">Enter a Start Frequency [hz]</string>
+    <string name="edit_message2">Enter an End Freqency [hz]</string>
+    <string name="edit_message3">Enter a Frequency Step </string>
+    <string name="button_send">Send</string>
+    <string name="button_connect">Connect</string>
+    <string name="test">Test</string>
+    <string name="title_activity_display_message">My Message</string>
+
+</resources>

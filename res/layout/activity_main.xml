@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="340dip"
+        android:layout_height="200dip" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/baseValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="70dp"
+        android:text="Base Value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/baseValue"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/peakCurrent"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cellNumber"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/cellNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peakCurrent"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="34dp"
+        android:text="Cell Concentration(/uL)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/peakCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/baseValue"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="32dp"
+        android:text="Sample Value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/peakCurrentValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"            
+        android:layout_alignBottom="@+id/peakCurrent"
+        
+        android:layout_alignRight="@+id/button1"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cellNumberValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_alignRight="@+id/button1"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+    <Button
+        android:id="@+id/calibrate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/baseValue"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="27dp"
+        android:onClick="calibrate"
+        android:text="Calibrate" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="46dp"
+        android:layout_toRightOf="@+id/calibrate"
+        android:onClick="plot"
+        android:text="@string/test" />
+
+    <TextView
+        android:id="@+id/baseValueNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/baseValue"
+    	android:layout_alignRight="@+id/button1"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
